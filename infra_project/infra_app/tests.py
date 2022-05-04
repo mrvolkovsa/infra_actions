@@ -1,9 +1,15 @@
+"""Тесты."""
+
 from http import HTTPStatus
+
 from django.test import Client, TestCase
 
 
 class StaticPagesURLTests(TestCase):
+    """Тесты."""
+
     def setUp(self):
+        """Клиент."""
         self.guest_client = Client()
 
     def test_about_url_exists_at_desired_location(self):
